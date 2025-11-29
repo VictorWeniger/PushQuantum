@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Modelle und große Dateien
+*.pth
+*.pt
+*.h5
+*.pkl
+
+# Plots und Visualisierungen
+*.png
+*.jpg
+*.pdf
+evaluation_plots/
+plots/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+venv/
+env/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (optional - falls große Daten nicht gepusht werden sollen)
+# *.xlsx
+# *.csv
+
