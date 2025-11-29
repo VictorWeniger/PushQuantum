@@ -85,8 +85,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 X_train = torch.tensor(X_train, dtype=torch.float32)
 X_test = torch.tensor(X_test, dtype=torch.float32)
-y_train = torch.tensor(y_train, dtype=torch.long)
-y_test = torch.tensor(y_test, dtype=torch.long)
+y_train = torch.tensor(y_train, dtype=torch.float32)
+y_test = torch.tensor(y_test, dtype=torch.float32)
 
 mean = X_train.mean(dim=0, keepdim=True)
 std = X_train.std(dim=0, keepdim=True).clamp_min(1e-6)
