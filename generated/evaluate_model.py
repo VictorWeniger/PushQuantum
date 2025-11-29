@@ -251,7 +251,7 @@ def main():
     print(f"✅ Modell geladen: {len(feature_cols)} Features\n")
     
     # Daten laden
-    X, y, _ = load_and_prepare_data('provided/train.xlsx')
+    X, y, _ = load_and_prepare_data('../provided/train.xlsx')
     
     # Train/Val/Test Split (gleicher wie beim Training)
     X_temp, X_test, y_temp, y_test = train_test_split(

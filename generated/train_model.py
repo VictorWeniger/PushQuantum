@@ -21,7 +21,7 @@ np.random.seed(42)
 
 
 class SwaptionDataset(Dataset):
-    """PyTorch Dataset für Swaption-Daten"""
+    """PyTorch Dataset für Swaptionc-Daten"""
     
     def __init__(self, X, y):
         """
@@ -260,7 +260,7 @@ def plot_training_curves(train_losses, val_losses, save_path='training_curves.pn
 def main():
     """Hauptfunktion"""
     # Pfade
-    data_path = 'provided/train.xlsx'
+    data_path = '../provided/train.xlsx'
     
     # Device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
