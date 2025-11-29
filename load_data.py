@@ -88,10 +88,11 @@ X_test = torch.tensor(X_test, dtype=torch.float32)
 y_train = torch.tensor(y_train, dtype=torch.float32)
 y_test = torch.tensor(y_test, dtype=torch.float32)
 
-mean = X_train.mean(dim=0, keepdim=True)
-std = X_train.std(dim=0, keepdim=True).clamp_min(1e-6)
-X_train = (X_train - mean) / std
-X_test = (X_test - mean) / std
+if False:
+    mean = X_train.mean(dim=0, keepdim=True)
+    std = X_train.std(dim=0, keepdim=True).clamp_min(1e-6)
+    X_train = (X_train - mean) / std
+    X_test = (X_test - mean) / std
 
 print(f"Train size: {X_train.shape[0]} samples")
 print(f"Test size: {X_test.shape[0]} samples")
